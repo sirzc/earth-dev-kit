@@ -1,0 +1,32 @@
+<idea-plugin>
+    <id>com.myth.earth.earth-dev-kit</id>
+    <name>Earth Dev Kit</name>
+    <vendor email="zhouchao7@sf-express.com" url="https://gitee.com/zc151724">周潮</vendor>
+
+    <description>
+        <![CDATA[
+            IDEA插件开发工具.<br>
+            <em>打开插件安装目录</em>
+            <em>打开全局配置目录</em>
+            <em>打开全局配置目录</em>
+            <em>打开全局配置目录</em>
+        ]]>
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <idea-version since-build="201.6668.113"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <!-- 帮助 -->
+        <action class="com.myth.earth.devkit.action.OpenPluginDirectoryAction" text="打开插件安装目录">
+            <add-to-group group-id="HelpDiagnosticTools" anchor="after" relative-to-action="LogDebugConfigure"/>
+        </action>
+        <action class="com.myth.earth.devkit.action.OpenPathDirectoryAction" text="打开全局配置目录">
+            <add-to-group group-id="HelpDiagnosticTools" anchor="after" relative-to-action="LogDebugConfigure"/>
+        </action>
+    </actions>
+</idea-plugin>
