@@ -21,12 +21,11 @@
     </extensions>
 
     <actions>
-        <!-- 帮助 -->
-        <action class="com.myth.earth.devkit.action.OpenPluginDirectoryAction" text="打开插件安装目录">
+        <group id="EarthDevKit.HelpGroup" popup="true" text="Earth Dev Kit">
             <add-to-group group-id="HelpDiagnosticTools" anchor="after" relative-to-action="LogDebugConfigure"/>
-        </action>
-        <action class="com.myth.earth.devkit.action.OpenPathDirectoryAction" text="打开全局配置目录">
-            <add-to-group group-id="HelpDiagnosticTools" anchor="after" relative-to-action="LogDebugConfigure"/>
-        </action>
+            <action class="com.myth.earth.devkit.action.OpenPluginDirectoryAction" text="打开插件安装目录" />
+            <action class="com.myth.earth.devkit.action.OpenPathDirectoryAction" text="打开全局配置目录"/>
+            <action class="com.myth.earth.devkit.action.PropertiesComponentShowAction" text="非持久配置读取" />
+        </group>
     </actions>
 </idea-plugin>
