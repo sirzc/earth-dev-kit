@@ -5,11 +5,11 @@
 
     <description>
         <![CDATA[
-            IDEA插件开发工具.<br>
+            Earth Dev Kit: is one of the plugins in the earth series,it is mainly used to obtain some information during the development of plugins.
+            Earth 系列插件之一，主要用于插件开发过程中一些信息获取以及一些便捷操作<br>
             <em>打开插件安装目录</em>
             <em>打开全局配置目录</em>
-            <em>打开全局配置目录</em>
-            <em>打开全局配置目录</em>
+            <em>非持久配置读取</em>
         ]]>
     </description>
 
